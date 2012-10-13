@@ -10,7 +10,7 @@ Run the `install` shell script to install. Everything is installed into `/usr/lo
 
 ######Usage:
 
-`youtube-mp3 URL`
+`youtube-search textfile(list of song titles, separated with return chars and all spaces replaced with "+"`
 OR
 `youtube-mp3`
 `Please enter a YouTube URL: URL`
