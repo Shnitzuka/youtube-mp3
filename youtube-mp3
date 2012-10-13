@@ -1,11 +1,7 @@
 #!/bin/bash
 
 address=$1
-if [[ $address ]]; then
-  echo "Start..."
-else
-  read -r -p "Enter YouTube address: " address
-fi
+#read -r -p "Enter YouTube address: " address
 return_code=$?
 regex='v=(.*)'
 if [[ $return_code -eq 0 ]]; then
@@ -21,10 +17,6 @@ if [[ $return_code -eq 0 ]]; then
 
 		if [ -e $video_id.mp4 ]; then
 			ext="mp4"
-		fi
-		
-    if [ -e $video_id.webm ]; then
-			ext="webm"
 		fi
 		
 		if [ "$(uname -s)" != "Darwin" ]; then
