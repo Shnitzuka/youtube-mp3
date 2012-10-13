@@ -22,7 +22,7 @@ if [[ ${segment[0]} =~ $regex ]]; then
 		address[$lineNum]=${BASH_REMATCH[1]}
 		address[$lineNum]=$(echo $address | cut -d'"' -f1)
 		address[$lineNum]=http://www.youtube.com/watch?v=$address
-		youtube-mp3.sh $address
+		youtube-mp3 $address
 fi
 
 
