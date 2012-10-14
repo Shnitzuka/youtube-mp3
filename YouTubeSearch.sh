@@ -25,5 +25,5 @@ if [[ ${segment[0]} =~ $regex ]]; then
 		youtube-mp3 $address
 fi
 
-
+rm results?search_query=$line
 done
